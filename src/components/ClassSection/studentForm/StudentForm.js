@@ -14,13 +14,15 @@ const StudentForm = (props) => {
     const studentName = nameInput.current.value;//Take ref
     const studentClass = classInput.current.value;//Take ref
     const studentAddress = addressInput.current.value;//Take ref
+    const studentroll = rollnoInput.current.value;//Take ref
     // passs student data
     const studentGivenData = {
       name: studentName,
       class: studentClass,
-      address: studentAddress
+      address: studentAddress,
+      roll_no: studentroll
     }
-    console.log("Student Data",studentGivenData);
+    console.log("Student Data", studentGivenData);
     // router.push('/')
     props.createStudents(studentGivenData)//Send Data to form Create stuudents
 

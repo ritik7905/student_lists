@@ -20,8 +20,10 @@ const StudentList = (props) => {
                     <img src={props.studentImg} alt="Loading..." />
                 </div> */}
                 <div className={style.studetntDetails}>
-                    <div className={style.title}>{props.studentName}</div>
-                    <div className={style.info}>{props.studentDetails}</div>
+                    <div><span>Name:</span> {props.studentName}</div>
+                    <div><span>Class:</span> {props.studentClass}</div>
+                    <div><span>Address:</span> {props.studentAddress}</div>
+                    <div><span>Roll-No: </span> {props.studentRoll}</div>
                     <div className={style.student_details_btn}>
                         <Button handleClick={studentInfo}>Show Details</Button>
                     </div>

@@ -4,7 +4,7 @@ import StudentList from '../studentLists/StudentList';
 import style from "./style.module.scss"
 
 const StudentData = (props) => {
-    // console.log(props.studentData);
+    console.log(props.studentData);
     return (
         <div className={style.students_data}>
             {
@@ -12,9 +12,10 @@ const StudentData = (props) => {
                     return (
                         <StudentList key={item.id}
                             id={item.id}
-                            studentImg={item.studentImage}
-                            studentName={item.title}
-                            studentDetails={item.description}
+                            studentName={item.name}
+                            studentClass={item.class}
+                            studentAddress = {item.address}
+                            studentRoll = {item.roll_no}
                         />
                     )
                 })
