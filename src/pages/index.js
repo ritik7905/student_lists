@@ -3,40 +3,7 @@ import { MongoClient } from 'mongodb'
 import StudentData from '../components/ClassSection/studentData/StudentData'
 import styles from '../styles/Home.module.scss'
 
-const studentData = [
-  {
-    id: "1",
-    title: "Student 1",
-    studentClass: "2nd",
-    studentAddress: "G-45/18, laxmi Park",
-    studentRoll: "40",
-    description: "student Content here.",
-  },
-  {
-    id: "2",
-    title: "Student 2",
-    studentClass: "2nd",
-    studentAddress: "G-45/18, laxmi Park",
-    studentRoll: "40",
-    description: "student Content here.",
-  },
-  {
-    id: "3",
-    title: "Student 3",
-    studentClass: "2nd",
-    studentAddress: "G-45/18, laxmi Park",
-    studentRoll: "40",
-    description: "student Content here.",
-  },
-  {
-    id: "4",
-    title: "Student 4",
-    studentClass: "2nd",
-    studentAddress: "G-45/18, laxmi Park",
-    studentRoll: "40",
-    description: "student Content here.",
-  },
-]
+
 const Home = (props) => {
   return (
     <div className={styles.homePage}>
