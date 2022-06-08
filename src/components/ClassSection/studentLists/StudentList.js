@@ -22,7 +22,7 @@ const StudentList = (props) => {
                 <div className={style.studetntDetails}>
                     <div><span>Name:</span> {props.studentName}</div>
                     <div><span>Class:</span> {props.studentClass}</div>
-                    <div><span>Address:</span> {props.studentAddress}</div>
+                    {/* <div><span>Address:</span> {props.studentAddress}</div> */}
                     <div><span>Roll-No: </span> {props.studentRoll}</div>
                     <div className={style.student_details_btn}>
                         <Button handleClick={studentInfo}>Show Details</Button>

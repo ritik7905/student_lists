@@ -1,7 +1,13 @@
 .navigation {
+    background-color: #195B9D;
+    width: 100%;
+    .logo {
+        color: white;
+    }
     .lists {
         display: flex;
         gap: 60px;
         margin: 0 auto;
+        color: white;
     }
 }

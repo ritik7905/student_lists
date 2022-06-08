@@ -8,14 +8,14 @@ const StudentData = (props) => {
     return (
         <div className={style.students_data}>
             {
-                props.studentData.map((item) => {
+                props.studentData && props.studentData.map((item) => {
                     return (
                         <StudentList key={item.id}
                             id={item.id}
                             studentName={item.name}
                             studentClass={item.class}
-                            studentAddress = {item.address}
-                            studentRoll = {item.roll_no}
+                            studentAddress={item.address}
+                            studentRoll={item.roll_no}
                         />
                     )
                 })
